@@ -1,0 +1,15 @@
+/media/thiago/Arquivos/dev/dotnet/Teste/bin/Debug/net7.0/Teste
+/media/thiago/Arquivos/dev/dotnet/Teste/bin/Debug/net7.0/Teste.deps.json
+/media/thiago/Arquivos/dev/dotnet/Teste/bin/Debug/net7.0/Teste.runtimeconfig.json
+/media/thiago/Arquivos/dev/dotnet/Teste/bin/Debug/net7.0/Teste.dll
+/media/thiago/Arquivos/dev/dotnet/Teste/bin/Debug/net7.0/Teste.pdb
+/media/thiago/Arquivos/dev/dotnet/Teste/obj/Debug/net7.0/Teste.csproj.AssemblyReference.cache
+/media/thiago/Arquivos/dev/dotnet/Teste/obj/Debug/net7.0/Teste.GeneratedMSBuildEditorConfig.editorconfig
+/media/thiago/Arquivos/dev/dotnet/Teste/obj/Debug/net7.0/Teste.AssemblyInfoInputs.cache
+/media/thiago/Arquivos/dev/dotnet/Teste/obj/Debug/net7.0/Teste.AssemblyInfo.cs
+/media/thiago/Arquivos/dev/dotnet/Teste/obj/Debug/net7.0/Teste.csproj.CoreCompileInputs.cache
+/media/thiago/Arquivos/dev/dotnet/Teste/obj/Debug/net7.0/Teste.dll
+/media/thiago/Arquivos/dev/dotnet/Teste/obj/Debug/net7.0/refint/Teste.dll
+/media/thiago/Arquivos/dev/dotnet/Teste/obj/Debug/net7.0/Teste.pdb
+/media/thiago/Arquivos/dev/dotnet/Teste/obj/Debug/net7.0/Teste.genruntimeconfig.cache
+/media/thiago/Arquivos/dev/dotnet/Teste/obj/Debug/net7.0/ref/Teste.dll
