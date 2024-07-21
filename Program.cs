@@ -140,5 +140,37 @@ class Program
 
         int? idade = null;
         Console.WriteLine(idade);
+
+        //CONVERSÕES
+        //PARSE
+
+        /*
+            DEFINIÇÕES
+
+            MÉTODO PRESENTE EM TODOS OS TIPOS PRIMITIVOS
+            SEMPRE ESPERA UMA STRING OU CARACTERE
+            CASO HAJA ALGUMA INCOMPATIBILIDADE, GERA UM ERRO
+        */
+
+        string cpf = "12345678910";
+        ulong inteiro = ulong.Parse(cpf);
+
+        Console.WriteLine(inteiro);
+
+        //CONVERT
+
+        /*
+            DEFINIÇÕES
+
+            MÉTODO PRESENTE EM TODOS OS TIPOS PRIMITIVOS
+            É POSSÍVEL CONVERTER VÁRIOS TIPOS DE VALOR (NÃO APENAS CARACTERES COMO NO PARSE)
+            DEVEMOS INFORMAR O TIPO NA CHAMADA DA CONVERSÃO
+            CASO HAJA ALGUMA INCOMPATIBILIDADE, GERA UM ERRO
+        */
+
+        bool maiorDeIdade = true;
+        byte idadeBoll = Convert.ToByte(maiorDeIdade);
+
+        Console.WriteLine(idadeBoll);
     }
 }
