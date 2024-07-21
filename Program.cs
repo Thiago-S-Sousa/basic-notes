@@ -172,5 +172,38 @@ class Program
         byte idadeBoll = Convert.ToByte(maiorDeIdade);
 
         Console.WriteLine(idadeBoll);
+
+        //CONVERSÃO IMPLÍCITA - SEM A NECESSIDADE DE EXPLICITAR O TIPO
+
+        int quantidadeSemanal = 7;
+        float notaRedacao = 5.1f;
+
+        /*
+            quantidadeSemanal = notaRedacao; 
+            ERRADO - INCOMPATIBILIDADE DE TIPOS DE DADOS 
+        */
+
+        notaRedacao = quantidadeSemanal;
+
+        //CONVERSÃO EXPLÍCITA - É NECESSÁRIO EXPLICITAR O TIPO
+
+        quantidadeSemanal = (int)notaRedacao;
+        Console.WriteLine(quantidadeSemanal);
+
+        //MÉTODO TOSTRING PARA CONVERSÃO COM PARSE
+
+        double populacaoLocal = 17.89672223;
+
+        /*
+            string pop = populacaoLocal.ToString(); - CONVERTENDO PARA STRING
+            int populacao = int.Parse(pop); - CONVERTENDO PARA INTEIRO ATRAVÉS DO PARSE
+    
+            ERRADO - INCOMPATIBILIDADE DE TIPOS DE DADOS
+        */
+
+        int populacao = Convert.ToInt32(populacaoLocal);
+
+        Console.WriteLine(populacao);
+
     }
 }
