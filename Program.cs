@@ -228,5 +228,39 @@ class Program
         {
             Console.WriteLine("Idade incompatível! Você não pode votar.");
         }
+
+        // ESTRUTURA CONDICIONAL SWITCH
+
+        /*
+            DEFINIÇÕES
+
+            UTILIZADO QUANDO SE TEM MUITAS DECISÕES
+            EXECUÇÃO EM CASCATA
+            DEVEMOS PARAR MANUALMENTE A EXECUÇÃO ATRAVÉS DO COMANDO BREAK
+            CASO NENHUMA DAS CONDIÇÕES FOREM ATENDIDAS CAI NA EXECUÇÃO PADRÃO - DEFAULT
+        */
+
+        string nacionalidade = "ARG";
+
+        switch(nacionalidade){
+            case "BR" : Console.WriteLine("você é brasileiro.");
+                break;
+            case "CA" : Console.WriteLine("You are canadian.");
+                break;
+            case "EUA" : Console.WriteLine("Are you a U.S. citizen.");
+                break;
+            case "PAR" : Console.WriteLine("Eres de Paraguay.");
+                break;
+            default : Console.WriteLine("Nationality not identified, contact our operators.");
+                break;
+        }
+
+        bool? valorBool = null;
+
+        switch(valorBool){
+            case true : Console.WriteLine("Valor verdadeiro."); break;
+            case false : Console.WriteLine("Valor falso."); break;
+            default: Console.WriteLine("Valor nullo."); break;
+        }
     }
 }
