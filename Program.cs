@@ -205,5 +205,28 @@ class Program
 
         Console.WriteLine(populacao);
 
+        //OPERADOR CONDICIONAL IF
+
+        int anoAtual = 2024;
+        int anoNascimento = 1957;
+
+        int idadeAtual = anoAtual - anoNascimento;
+
+        Console.WriteLine(idadeAtual);
+
+        byte idadeMinima = 16;
+        byte maiorIdade = 18;
+        byte idadeMaxima = 65;
+
+        if(idadeAtual >= maiorIdade && idadeAtual < idadeMaxima)
+        {
+            Console.WriteLine("Maior de idade! Voto obrigatório!");
+        } else if(idadeAtual >= idadeMinima && idadeAtual < maiorIdade)
+        {
+            Console.WriteLine("Menor de idade, voto opcional.");
+        }else
+        {
+            Console.WriteLine("Idade incompatível! Você não pode votar.");
+        }
     }
 }
