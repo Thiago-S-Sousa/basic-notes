@@ -262,5 +262,90 @@ class Program
             case false : Console.WriteLine("Valor falso."); break;
             default: Console.WriteLine("Valor nullo."); break;
         }
+
+        //LAÇOS DE REPETIÇÃO
+        //FOR
+
+        /*
+            DEFINIÇÕES
+
+            TRADUÇÃO "PARA", OU SEJA, PARA CADA ITEM EM UM VALOR
+            EXECUTA UMA DETERMINADA AÇÃO VÁRIAS VEZES
+            EXIGE 3 PARÂMETROS - CONTADOR, CONDIÇÃO E INCREMENTO/DECREMENTO
+        */
+
+        //CONTA DE 0 A 5
+        for (int i = 0; i <= 5; i++)
+        {
+            Console.WriteLine(i);
+        } ;
+
+        //CONTA DE 0 A 4
+        for (var i = 0; i < 5; i++)
+        {
+            Console.WriteLine(i);
+        } ;
+
+        //CONTA DE 5 A 0
+        for (var i = 5; i >= 0; i--)
+        {
+            Console.WriteLine(i);
+        };
+
+        //CONTA DO 1 A 10
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(i);
+        } ;
+
+        //WHILE
+
+        /*
+            DEFINIÇÕES
+
+            TRADUÇÃO "ENQUANTO", OU SEJA, ENQUANTO UMA CONDIÇÃO FOR VERDADEIRA/ATENDIDA
+            EXIGE APENAS UMA CONDIÇÃO
+            CHECA A CONDIÇÃO ANTES DE EXECUTAR
+        */
+
+        int condicao = 0;
+
+        //CONTA DE 0 A 5
+        //EXIBE DE 0 A 5 NA TELA
+        //DESSA FORMA A INCREMENTAÇÃO ACONTECE DEPOIS DA EXIBIÇÃO
+        while(condicao <= 5)
+        {
+            Console.WriteLine(condicao);
+            condicao++;
+        }
+
+        int mesmaCondicao = 0;
+
+        //CONTA DE 0 A 5
+        //EXIBE DE 1 A 6 NA TELA
+        //DESSA FORMA A INCREMENTAÇÃO ACONTECE ANTES DA EXIBIÇÃO
+        while(mesmaCondicao <= 5)
+        {
+            mesmaCondicao++;
+            Console.WriteLine(mesmaCondicao);
+        }
+
+        //DO
+
+        /*
+            DEFINIÇÕES
+            
+            TRADUÇÃO "FAÇA", OU SEJA, REALIZE UMA AÇÃO ENQUANTO
+            DEFINIDO PELA PALAVRA DO/WHILE
+            CHECA A CONDIÇÃO DEPOIS DE EXECUTAR
+        */
+
+        int chequeDepois = 0;
+
+        do
+        {
+            Console.WriteLine(chequeDepois);
+            chequeDepois++;
+        } while (chequeDepois <= 5);
     }
 }
