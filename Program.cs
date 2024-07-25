@@ -347,5 +347,34 @@ class Program
             Console.WriteLine(chequeDepois);
             chequeDepois++;
         } while (chequeDepois <= 5);
+
+        
+        //MÉTODOS E FUNÇÕES
+        
+        /*
+            DEFINIÇÕES
+
+            AS DUAS MENÇÕES ESTÃO CORRETAS E CORRESPONDEM A MESMA COISA
+            POSSUI UM RETORNO, UM NOME E PARÂMETROS
+            ESTA COMPOSIÇÃO É CHAMADA DE ASSINATURA
+        */
+
+        static void MeuMetodo(string parametro)
+        {
+            Console.WriteLine(parametro);
+        }
+
+        MeuMetodo("Fundamentos são essenciais!");
+
+        // ----------------------------------------------- //
+
+        static string retornaNome(string nome, string sobreNome)
+        {
+            return nome + " " + sobreNome;
+        }
+
+        string nomeESobreNome = retornaNome("Thiago", "Santos");
+
+        Console.WriteLine(nomeESobreNome);
     }
 }
