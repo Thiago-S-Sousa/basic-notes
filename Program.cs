@@ -357,24 +357,46 @@ class Program
             AS DUAS MENÇÕES ESTÃO CORRETAS E CORRESPONDEM A MESMA COISA
             POSSUI UM RETORNO, UM NOME E PARÂMETROS
             ESTA COMPOSIÇÃO É CHAMADA DE ASSINATURA
+
+            COMO BOAS PRÁTICAS, NÃO PODEMOS TER MÉTODO DENTRO DE MÉTODO
+            MÉTODOS VOID NÃO RETORNAM NADA - VAZIO
+            MÉTODOS OU CLASSES ESTÁTICAS, NÃO PRECISAM SER INSTANCIADAS
         */
-
-        static void MeuMetodo(string parametro)
-        {
-            Console.WriteLine(parametro);
-        }
-
+        
         MeuMetodo("Fundamentos são essenciais!");
-
-        // ----------------------------------------------- //
-
-        static string retornaNome(string nome, string sobreNome)
-        {
-            return nome + " " + sobreNome;
-        }
-
-        string nomeESobreNome = retornaNome("Thiago", "Santos");
-
+        
+        string nomeESobreNome = RetornaNome("Thiago", "Santos");
         Console.WriteLine(nomeESobreNome);
+
+        string dadosPessoais = DadosPessoais(nome: "Thiago", ultimoNome: "Sousa", idade: 29);
+        Console.WriteLine(dadosPessoais);
     }
+
+    static void MeuMetodo(string parametro)
+    {
+        Console.WriteLine(parametro);
+    }
+
+
+    // ----------------------------------------------- //
+
+    static string RetornaNome(string nome, string sobreNome)
+    {
+        return nome + " " + sobreNome;
+    }
+
+    // ----------------------------------------------- //
+
+    //PARÂMETROS OPCIONAIS - INSERIDOS POR ULTIMO E SEU VALOR SEMPRE INICIALIZADO(PARÂMETRO = VALOR)
+
+    static string DadosPessoais(
+        string nome, 
+        string ultimoNome, 
+        int idade, 
+        string nacionalidade = "CA",
+        string cpf = "012345678910"
+        )
+        {
+            return nome + " " + ultimoNome + " tem " + idade.ToString() + " anos.";
+        }
 }
