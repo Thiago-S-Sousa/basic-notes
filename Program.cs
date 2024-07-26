@@ -347,7 +347,73 @@ class Program
             Console.WriteLine(chequeDepois);
             chequeDepois++;
         } while (chequeDepois <= 5);
+        
+        // --------------------------------------- //
 
+        //TIPOS DE REFERÊNCIA E TIPOS DE VALOR - VALUE TYPES E REFERENCE TYPES
+
+        //HEAP E STACK
+        /*
+            DEFINIÇÕES
+            A MEMÓRIA É DIVIDIDA EM DUAS PARTES, HEAP E STACK
+            HEAP - ARMAZENA OS DADOS
+            STACK - ARMAZENA AS REFERÊNCIAS PARAOS OS DADOS
+            NO .NET QUALQUER TIPO É TRATADO COMO REFERENCE TYPE OU VALUE TYPE
+        */
+
+        //VALUE TYPES
+        /*
+            DEFINIÇÕES
+            VALUE TYPES ARMAZENAM DADOS
+            SÃO ARMAZENADOS EM UM LOCAL DA MEMÓRIA CHAMADA STACK
+            QUANDO ARMAZENAMOS UM VALOR, A MEMÓRIA É ALOCADA
+            ESTE ESPAÇO ARMAZENA O DADO CRIADO
+            SE ASSIMILARMOS UMA VARIÁVEL VALUE TYPE A OUTRA
+                - O VALOR SERÁ COPIADO
+                - AMBAS SERÃO INDEPENDENTES
+            BUILT-IN TYPES(TIPOS PRIMITIVOS), STRUCTS, ENUMS
+            GARBAGE COLLECTOR NÃO ACESSA O STACK
+        */
+
+        int x = 25;
+        int y = x; //Y É UMA CÓPIA DE X
+
+        Console.WriteLine(x); //25
+        Console.WriteLine(y); //25
+
+        x = 32; //SOMETE X FOI ALTERADO
+        Console.WriteLine(x); //32
+        Console.WriteLine(y); //25
+
+        //REFERENCE TYPES
+        /*
+            DEFINIÇÕES
+            ARMAZENAM O ENDEREÇO DO OBJETO QUE CONTÉM OS DADOS
+            NÃO ARMAZENA OS DADOS EM SI
+            SÃO ARMAZENADOS EM UM LOCAL DA MEMÓRIA CHAMADO DE HEAP
+            AO ASSIMILAR UMA VARIÁVEL REFERENCE TYPE A OUTRA
+                - CRIARÁ UMA REFERÊNCIA
+                - APONTA PARA A MESMA INFORMAÇÃO
+                - NÃO SÃO INDEPENDENTES
+            QUANDO NÃO MAIS UTILIZADOS SÃO MARCADOS PARA EXCLUSÃO
+            GARBAGE COLLECTOR PASSA REMOVENDO TODOS ELES
+            CLASSES, OBJECTS, ARRAYS...
+        */
+
+        var arr = new string[2];
+        arr[0] = "Item 1";
+
+        var arr2 = arr; //NÃO CRIA UMA CÓPIA
+
+        Console.WriteLine(arr[0]);
+        Console.WriteLine(arr2[0]);
+
+        //ALTERA AS DUAS LISTAS
+        arr[0] = "Item 2";
+        Console.WriteLine(arr[0]);
+        Console.WriteLine(arr2[0]);
+
+        // --------------------------------------- //
         
         //MÉTODOS E FUNÇÕES
         
@@ -399,4 +465,5 @@ class Program
         {
             return nome + " " + ultimoNome + " tem " + idade.ToString() + " anos.";
         }
+
 }
