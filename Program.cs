@@ -436,6 +436,28 @@ class Program
 
         string dadosPessoais = DadosPessoais(nome: "Thiago", ultimoNome: "Sousa", idade: 29);
         Console.WriteLine(dadosPessoais);
+
+        // ----------------------------------------------- //
+
+        //INSTÂNCIANDO AS STRUCTS
+
+        Products mouse = new Products();
+
+        Console.WriteLine(mouse.Title);
+        Console.WriteLine(mouse.Price);
+        Console.WriteLine(mouse.Description);
+
+        mouse.Price = 30.00;
+        Console.WriteLine(mouse.PriceInDolar(5.99));
+
+        Users carl = new Users("Thiago Santos de Sousa", 20, "Canada");
+
+        Console.WriteLine(carl.Name);
+        Console.WriteLine(carl.Age);
+        Console.WriteLine(carl.Nationality);
+
+        // ----------------------------------------------- //
+        
     }
 
     static void MeuMetodo(string parametro)
