@@ -457,7 +457,20 @@ class Program
         Console.WriteLine(carl.Nationality);
 
         // ----------------------------------------------- //
-        
+
+        //INSTÂNCIANDO AS ENUMS
+
+        var client = new Client("Thiago Santos de Sousa", EMaritalStatus.married);
+
+        Console.WriteLine(client.MaritalStatus);
+
+        var employee = new PositionInCompany(ECompany.trueCompany, EkindWork.engineer);
+
+        Console.WriteLine(employee.Company);
+        Console.WriteLine(employee.Work);
+
+        // ----------------------------------------------- //
+         
     }
 
     static void MeuMetodo(string parametro)
